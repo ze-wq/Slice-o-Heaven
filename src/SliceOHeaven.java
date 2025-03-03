@@ -4,11 +4,19 @@ public class SliceOHeaven {
     public String storeAddress;
     public String storeEmail;
     public String storePhone;
+<<<<<<< HEAD
         
     private static final String DEF_ORDER_ID = "DEF-SOH-099";
     private static final String DEF_PIZZA_INGREDIENTS = "Mozzarella Cheese";
     private static final double DEF_ORDER_TOTAL = 15.00;
        
+=======
+    
+    private static final String DEF_ORDER_ID = "DEF-SOH-099";
+    private static final String DEF_PIZZA_INGREDIENTS = "Mozzarella Cheese";
+    private static final double DEF_ORDER_TOTAL = 15.00;
+    
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
     private String orderID;
     private String orderDetails;
     private double orderTotal;
@@ -17,6 +25,7 @@ public class SliceOHeaven {
     private String drinks;
     private String storeMenu;
     private double pizzaPrice;
+<<<<<<< HEAD
         
     public SliceOHeaven() {
             this.orderID = DEF_ORDER_ID;
@@ -45,10 +54,41 @@ public class SliceOHeaven {
     public double getOrderTotal() { return orderTotal; }
     public void setOrderTotal(double orderTotal) { this.orderTotal = orderTotal; }
         
+=======
+    
+    public SliceOHeaven() {
+        this.orderID = DEF_ORDER_ID;
+        this.pizzaIngredients = DEF_PIZZA_INGREDIENTS;
+        this.orderTotal = DEF_ORDER_TOTAL;
+        this.sides = "";
+        this.drinks = "";
+        this.storeMenu = "";
+        this.pizzaPrice = 0.0;
+    }
+    
+    public SliceOHeaven(String id, String ingredients, double total) {
+        this(); 
+        this.orderID = id;
+        this.pizzaIngredients = ingredients;
+        this.orderTotal = total;
+    }
+    
+    
+    public String getOrderID() { return orderID; }
+    public void setOrderID(String orderID) { this.orderID = orderID; }
+    
+    public String getOrderDetails() { return orderDetails; }
+    public void setOrderDetails(String orderDetails) { this.orderDetails = orderDetails; }
+    
+    public double getOrderTotal() { return orderTotal; }
+    public void setOrderTotal(double orderTotal) { this.orderTotal = orderTotal; }
+    
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
     public String getPizzaIngredients() { return pizzaIngredients; }
     public void setPizzaIngredients(String pizzaIngredients) { 
         this.pizzaIngredients = pizzaIngredients;
     }
+<<<<<<< HEAD
         
     public String getSides() { return sides; }
     public void setSides(String sides) { this.sides = sides; }
@@ -62,45 +102,87 @@ public class SliceOHeaven {
     public double getPizzaPrice() { return pizzaPrice; }
     public void setPizzaPrice(double pizzaPrice) { this.pizzaPrice = pizzaPrice; }
         
+=======
+    
+    public String getSides() { return sides; }
+    public void setSides(String sides) { this.sides = sides; }
+    
+    public String getDrinks() { return drinks; }
+    public void setDrinks(String drinks) { this.drinks = drinks; }
+    
+    public String getStoreMenu() { return storeMenu; }
+    public void setStoreMenu(String storeMenu) { this.storeMenu = storeMenu; }
+    
+    public double getPizzaPrice() { return pizzaPrice; }
+    public void setPizzaPrice(double pizzaPrice) { this.pizzaPrice = pizzaPrice; }
+    
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
     public void takeOrder(String id, String details, double total) {
         orderID = id;
         orderDetails = details;
         orderTotal = total;
+<<<<<<< HEAD
             
         System.out.println("Order accepted!");
         System.out.println("Order is being prepared");
             
+=======
+        
+        System.out.println("Order accepted!");
+        System.out.println("Order is being prepared");
+        
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             System.out.println("Order is ready for pickup!");
         }
+<<<<<<< HEAD
             
+=======
+        
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
         System.out.println("Your order is ready!");
         makePizza();
         printReceipt();
     }
+<<<<<<< HEAD
         
+=======
+    
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
     private void makePizza() {
         System.out.println("Making your pizza: " + orderDetails);
         System.out.println("Adding ingredients: " + pizzaIngredients);
         System.out.println("Baking the pizza...");
+<<<<<<< HEAD
             
+=======
+        
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             System.out.println("Something went wrong while preparing your order!");
         }
+<<<<<<< HEAD
             
         System.out.println("Your pizza is ready!");
     }
         
+=======
+        
+        System.out.println("Your pizza is ready!");
+    }
+    
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
     private void printReceipt() {
         System.out.println("********RECEIPT********");
         System.out.println("Order ID: " + orderID);
         System.out.println("Order Details: " + orderDetails);
         System.out.println("Order Total: " + orderTotal);
     }
+<<<<<<< HEAD
     private static final String BLACKLISTED_NUMBER = "12345678901234";
     private String cardNumberToDisplay;
 
@@ -147,4 +229,6 @@ public class SliceOHeaven {
         System.out.println("Side: " + this.sideOfTheDay);
         System.out.printf("Special Price: $%.2f\n", this.specialPrice);
     }
+=======
+>>>>>>> 3cf351e4f75703a8877d97b520336742f078e3a0
 }
