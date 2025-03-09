@@ -3,5 +3,6 @@ public class App {
         SliceOHeaven pizzeria = new SliceOHeaven();
         pizzeria.takeOrder();
         pizzeria.specialOfTheDay("Hawaiian", "Cheese Sticks", 5.50);
+        System.out.println(pizzeria);
     }
 }
