@@ -1,4 +1,4 @@
-public enum PizzaSize {
+enum PizzaSize {
     LARGE("Large", 10),
     MEDIUM("Medium", 5),
     SMALL("Small", 0);
@@ -19,8 +19,13 @@ public enum PizzaSize {
         return addToPizzaPrice;
     }
 
-    @Override
     public String toString() {
-        return String.format("%s (+€%.0f)", pizzaSize, addToPizzaPrice);
+        return pizzaSize + " - " + addToPizzaPrice;
     }
+
+    double getPrice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+    }
+    
 }

@@ -1,4 +1,4 @@
-public enum Drinks {
+enum Drinks {
     COCA_COLA("Coca Cola", 8),
     COCOA_DRINK("Cocoa Drink", 10),
     NOTHING("No drinks", 0);
@@ -19,8 +19,9 @@ public enum Drinks {
         return addToPizzaPrice;
     }
 
-    @Override
     public String toString() {
-        return String.format("%s (+€%.0f)", drinkName, addToPizzaPrice);
+        return drinkName + " - " + addToPizzaPrice;
     }
+
+    
 }

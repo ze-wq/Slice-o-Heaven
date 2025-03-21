@@ -1,4 +1,4 @@
-public enum SideDish {
+enum SideDish {
     CALZONE("Calzone", 15),
     CHICKEN_PUFF("Chicken Puff", 20),
     MUFFIN("Muffin", 12),
@@ -20,8 +20,12 @@ public enum SideDish {
         return addToPizzaPrice;
     }
 
-    @Override
     public String toString() {
-        return String.format("%s (+€%.0f)", sideDishName, addToPizzaPrice);
+        return sideDishName + " - " + addToPizzaPrice;
     }
+
+    double getPrice() {
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+    }
+    
 }

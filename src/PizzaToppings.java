@@ -1,6 +1,6 @@
-public enum PizzaToppings {
+enum PizzaToppings{
     HAM("Ham", 2),
-    PEPPERONI("Pepperoni", 2),
+    Pepperoni("Pepperoni", 2),
     BEEF("Beef", 2),
     CHICKEN("Chicken", 2),
     SAUSAGE("Sausage", 2),
@@ -18,16 +18,25 @@ public enum PizzaToppings {
     private final String topping;
     private final double toppingPrice;
 
-    PizzaToppings(String topping, double price) {
+    PizzaToppings(String topping, double toppingPrice) {
         this.topping = topping;
-        this.toppingPrice = price;
+        this.toppingPrice = toppingPrice;
     }
 
-    public String getTopping() { return topping; }
-    public double getToppingPrice() { return toppingPrice; }
+    public String getTopping() {
+        return topping;
+    }
 
-    @Override
+    public double getToppingPrice() {
+        return toppingPrice;
+    }
+
     public String toString() {
-        return String.format("%s (€%.1f)", topping, toppingPrice);
+        return topping + " - " + toppingPrice;
+    }
+
+    double getPrice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
     }
 }
